@@ -1,5 +1,7 @@
 # dockur-compose
 
+Ref: https://github.com/dockur/windows
+
 ## Prerequisites
 
 ```bash
@@ -13,8 +15,6 @@ Spin up new Windows 11 Enterprise container:
 ```bash
 docker-compose -f windows11e.yml up
 ```
-
-Ref: https://github.com/dockur/windows
 
 ## RDP
 
