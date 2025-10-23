@@ -14,14 +14,16 @@ services:
       - USERNAME=bill
       - PASSWORD=gates
     ports:
-      - "${HOST_PORT:-8006}:8006"
+      - 8006:8006
+      - 8008:3389/tcp
+      - 8008:3389/udp
     devices:
       - /dev/kvm
       - /dev/net/tun
     cap_add:
       - NET_ADMIN
     volumes:
-      - ${STORAGE_PATH:-/mnt/d/dockeru/windows11e}:/storage
+      - /mnt/d/dockur/windows11e:/storage
     stop_grace_period: 120s
     stdin_open: true
     tty: true
